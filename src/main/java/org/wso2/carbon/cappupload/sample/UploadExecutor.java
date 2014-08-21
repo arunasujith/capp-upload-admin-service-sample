@@ -37,13 +37,13 @@ public class UploadExecutor {
 
 		//set the file path
 		DataHandler dataHandler = new DataHandler(new URL
-				("file:///home/aruna/Downloads/Service_Integration_CApp_1.0.0.car"));
+				("file:///home/aruna/Downloads/Sample_CApp_1.0.0.car"));
 		//set the capp name
-		carbonAppUploaderClient.uploadCarbonAppArtifact("Service_Integration_CApp_1.0.0.car", dataHandler);
+		carbonAppUploaderClient.uploadCarbonAppArtifact("Sample_CApp_1.0.0.car", dataHandler);
 	}
 
 	public static void setKeyStoreProperties() throws Exception {
-		System.setProperty("javax.net.ssl.trustStore", "/home/aruna/wso2/support-issues/YENLODEVSPRT-160/wso2esb-4.8" +
+		System.setProperty("javax.net.ssl.trustStore", "/home/aruna/wso2//wso2esb-4.8" +
 		                                               ".1/repository/resources/security/wso2carbon.jks");
 		System.setProperty("javax.net.ssl.trustStorePassword", "wso2carbon");
 		System.setProperty("javax.net.ssl.trustStoreType", "JKS");
